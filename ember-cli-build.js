@@ -1,10 +1,14 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const broccoliAssetRevDefaults = require("broccoli-asset-rev/lib/default-options");
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    fingerprint: { enabled: true, extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map', 'svg'], generateAssetMap: true }
+    fingerprint: {
+      extensions: broccoliAssetRevDefaults.extensions.concat(["webmanifest"]),
+      prepend: "https://evoluxos.com/",
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
