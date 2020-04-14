@@ -1,5 +1,8 @@
 # evoluxos-blog
 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/addda678-e731-4507-b1a9-dee88e83b114/deploy-status)](https://app.netlify.com/sites/compassionate-mcnulty-150f6b/deploys)
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
