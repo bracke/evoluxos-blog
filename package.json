@@ -1,11 +1,11 @@
 {
   "name": "evoluxos-blog",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "Small description for evoluxos-blog goes here",
-  "repository": "",
+  "description": "Blog documenting the development of Evoluxos.",
+  "repository": "https://github.com/bracke/evoluxos-blog.git",
   "license": "MIT",
-  "author": "",
+  "author": "Bent Bracke",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -32,6 +32,7 @@
     "ember-cli-dependency-checker": "^3.2.0",
     "ember-cli-fastboot": "^2.2.2",
     "ember-cli-htmlbars": "^4.2.3",
+    "ember-cli-image-transformer": "^4.0.1",
     "ember-cli-inject-live-reload": "^2.0.2",
     "ember-cli-moment-shim": "^3.7.1",
     "ember-cli-sass": "^10.0.1",
@@ -51,7 +52,6 @@
     "ember-source": "~3.17.0",
     "ember-template-lint": "^2.4.0",
     "ember-web-app": "^4.0.0",
-    "ember-welcome-page": "^4.0.0",
     "empress-blog": "^1.7.3",
     "empress-blog-attila-template": "^1.1.0",
     "eslint": "^6.8.0",

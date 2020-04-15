@@ -5,12 +5,22 @@ const broccoliAssetRevDefaults = require("broccoli-asset-rev/lib/default-options
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    "ember-cli-image-transformer": {
+      images: [
+        {
+          inputFilename: "lib/images/logo.svg",
+          outputFileName: "appicon-",
+          convertTo: "png",
+          destination: "assets/icons/",
+          sizes: [32, 192, 280, 512],
+        },
+      ],
+    },
     fingerprint: {
       extensions: broccoliAssetRevDefaults.extensions.concat(["webmanifest"]),
       prepend: "https://evoluxos.com/",
     },
   });
-
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
